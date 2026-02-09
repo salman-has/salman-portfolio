@@ -35,25 +35,35 @@
     font-weight: 500;
     margin-bottom: 50px;
 }
-.hero-connect{
+.hero-connect .anchor-link{
     padding: 25px 45px;
     border-radius: 50px;
     background: #df8908;
     cursor: pointer;
 }
-.hero-resume{
-    padding: 25px 75px;
+.hero-resume a{
+    padding: 25px 45px;
     border-radius: 50px;
     border: 2px solid #df8908;
     cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.3s ease;
 }
-.hero-connect:hover{
-    border: 2px solid white;
-}
-.hero-resume:hover{
+/* .hero-action .hero-connect  AnchorLink:hover{
+    border: 2px solid white;   
+} */
+.hero-connect .anchor-link:hover{
+      border: 2px solid white;   
+ }
+.hero-resume a:hover{
     border-color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+     padding: 27px 78px;
+    
 }
-@media(max-width:700px){
+@media(max-width:768px){
     .hero img{
         margin-bottom: 60px;
         width: 250px;
@@ -75,12 +85,23 @@
         font-size: 18px;
         font-weight: 500;
         margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
     }
-    .hero-connect{
-        padding: 20px 30px;
+
+     .hero-connect{
+        margin-bottom:50px ;
+     }
+
+    .hero-connect .anchor-link{
+        padding: 20px 50px;
         border-radius: 40px;
+       
+
     }
-    .hero-resume{
+    .hero-resume a{
         padding: 20px 50px;
         border-radius: 40px;
     }

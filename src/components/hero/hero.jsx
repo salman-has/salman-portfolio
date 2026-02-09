@@ -14,7 +14,7 @@ const Hero=()=>{
              
              <div className="hero-action">
                 <div className="hero-connect"><AnchorLink className="anchor-link"  href="#contact">Connect With me</AnchorLink></div>
-                <div className="hero-resume">My Resume</div>
+                <div className="hero-resume"><a  href="/React_resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</a></div>
             
 
              </div>

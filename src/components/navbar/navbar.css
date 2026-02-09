@@ -14,7 +14,8 @@
 .nav-connect{
     padding: 20px 40px;
     border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #dd1f6e 1.1%);
+    /* background-image: linear-gradient(267deg, #DA7C25 0.36%, #dd1f6e 1.1%); */
+    background-image: linear-gradient(45deg,#eb4c0d,#dd28a4);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -32,18 +33,22 @@
 .anchor-link{
     text-decoration: none;
     color: white;
+    font-weight: 700;
 }
 
 .nav-close-icon{
     display: none;
 }
 .nav-open-icon{
-     background: linear-gradient(200deg, #916d4b 70%, #5e4650 1.1%);
+     
      border-radius: 5px;
      display: none;
+      
+     background:linear-gradient(270deg, #eb4c0d -5%,#b415ff 100%);
+   
 }
 
-@media(max-width:600px){
+@media(max-width:768px){
     .navbar{
         margin: 20px 50px;
     }
@@ -54,6 +59,7 @@
         display: block;
         position: fixed;
         right: 30px;
+        background:linear-gradient(270deg, #eb4c0d -5%,#b415ff 100%);
         
     }
     .nav-close-icon{
@@ -62,6 +68,7 @@
         top: 30px;
         left: 290px;
         width: 30px;
+        background-color: #f01818;
     }
     .nav-menu{
         position: fixed;
@@ -69,12 +76,15 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: rgba(112, 40, 40, 0.692);
+        
+        
         width: 350px;
         height: 100%;
         z-index: 2;
         transition: right 0.5s;
         right: -350px;
+        background-color: linear-gradient(270deg, #f01818 -50%,#f15e19 100%);
+
     }
     .nav-menu li{
         font-size: 30px;

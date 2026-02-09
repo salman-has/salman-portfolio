@@ -1,18 +1,18 @@
 .scroll-top-btn {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 20px;
   height: 45px;
   width: 45px;
   border-radius: 50%;
   border: none;
-  background-color: #ff4d4d;
+  background: linear-gradient(45deg,#eb4c0d,#dd28a4);
   color: white;
   font-size: 22px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: 0.3s ease;
-  z-index: 999;
+  z-index: 999;font-weight: 900;
 }
 
 .scroll-top-btn:hover {

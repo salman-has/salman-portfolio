@@ -6,16 +6,24 @@ const Mywork=()=>{
         <div className="mywork" id="mywork">
              <div className="mywork-title">
                 <h1>My Letest Work</h1>
-                <img src="" alt=""></img>
+                {/* <img src="" alt=""></img> */}
              </div>
              <div className="mywork-container">
                  {mywork_data.map((work,index)=>{
-                    return <img src={work.w_img} key={index} alt="" width={300} height={250}></img>
+                    return <>
+                         <a href="https://counter-reactvite-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src={work.w_img} key={index} alt="" width={250} height={200}></img>
+                            <p key={index} style={{textDecoration:"none", fontSize:"22px",color:"white", marginTop:"10px"}}>{work.w_desc}</p>
+                        </a>
+                       
+                         
+                    </>
+                          
                  })}
              </div>
              <div className="mywork-showmore">
                 <p>Show More</p>
-                <span>---></span>
+                <span>---&gt;</span>
              </div>
         </div>
     )
