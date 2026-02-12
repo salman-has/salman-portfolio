@@ -10,14 +10,31 @@ const Mywork=()=>{
              </div>
              <div className="mywork-container">
                  {mywork_data.map((work,index)=>{
-                    return <>
-                         <a href="https://counter-reactvite-app.netlify.app/" target="_blank" rel="noopener noreferrer">
-                            <img src={work.w_img} key={index} alt="" width={250} height={200}></img>
-                            <p key={index} style={{textDecoration:"none", fontSize:"22px",color:"white", marginTop:"10px"}}>{work.w_desc}</p>
-                        </a>
-                       
-                         
-                    </>
+                     return <>
+                         <div className="work-card" style={{
+                            }}>
+
+                             {/* Project Image */}
+                             <img src={work.w_img} alt="project" height={195} style={{width:"100%",
+                                  borderRadius: "10px",objectFit: "cover"}} 
+                               />
+
+                             {/* Project Title / Description */}
+                             <p style={{ fontSize: "18px", color: "#fff", margin: "12px 0"}}> 
+                                {work.w_desc}
+                             </p>
+                                 
+
+                             {/* Buttons */}
+                             <div style={{ display: "flex",justifyContent: "space-between",gap: "10px"}}>
+                                  <a href={work.w_live_url} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                  <a href={work.w_github_url} target="_blank"rel="noopener noreferrer" style={{background:"white"}}>GitHub Code</a>
+                             </div>
+                         </div>
+
+
+
+                     </>
                           
                  })}
              </div>

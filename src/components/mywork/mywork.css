@@ -4,7 +4,10 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 80px auto;
+    padding:0 20px;
+    max-width: 1200px;
+    background-color: #dd28a4;
 }
 .mywork-title{
 
@@ -20,18 +23,37 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
-.mywork-container img{
+/* .mywork-container img{ */
+.work-card{
     box-sizing: border-box;
-    width: 400px;
-    height: 280px;
+    /* width: 400px; */
+    /* height: 280px; */
+    
+    width:100%;
+    max-width: 330px;
+    background:#111111e5;
+    border-radius: 12px; 
+    padding: 15px;
+    text-align: center; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
     transition: 0.3s;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
-.mywork-container img:hover{
-    transform: scale(1.10);
-    border: 4px solid #ee6f07;
+.work-card:hover{
+    transform: translateY(-8px);
+    /* border: 2px solid #c5c4c3; */
     border-radius: 10px;
     transition: 0.3s;
+}
+
+.work-card div a{
+    flex: 1;
+    text-decoration:none;
+    background: linear-gradient(45deg,#eb4c0d,#dd28a4);
+    color: black;
+    padding: 8px 0;
+    border-Radius: 6px;
+    font-Weight: bold;
 }
 .mywork-showmore{
     display: flex;
@@ -53,8 +75,12 @@
 @media(max-width:700px){
     .mywork{
         gap: 50px;
-        margin: 50px 70px;
+        margin: 50px 40px;
         align-items: start;
+        width: 70%;
+    }
+    .work-card{
+        margin-bottom: 70px;
     }
     .mywork-title h1{
         padding: 0;

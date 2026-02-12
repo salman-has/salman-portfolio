@@ -6,22 +6,30 @@ const mywork_data=[
     {
         w_no:1,
         w_desc:"Sopper template design",
-        w_img:capture_netflix
+        w_img:capture_netflix,
+        w_live_url:"",
+        w_github_url:""
     },
      {
         w_no:2,
         w_desc:"nit card  template design",
-        w_img:capture_nit_card
+        w_img:capture_nit_card,
+        w_live_url:"",
+        w_github_url:""
     },
      {
         w_no:3,
         w_desc:"Sopper template design",
-        w_img:shopper_temp
+        w_img:shopper_temp,
+        w_live_url:"",
+        w_github_url:""
     },
     {
          w_no:4,
-         w_desc:"Counter App in React",
-         w_img:counter_app
+         w_desc:"Number Counter App in React",
+         w_img:counter_app,
+         w_live_url:"https://counter-reactvite-app.netlify.app/",
+         w_github_url:"https://github.com/salman-has/react-counter-app-demo-test-.git"
     }
 
 ]
