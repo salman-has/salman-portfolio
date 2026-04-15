@@ -5,10 +5,10 @@ import counter_app from './counter_app.png';
 const mywork_data=[
     {
         w_no:1,
-        w_desc:"Sopper template design",
-        w_img:capture_netflix,
-        w_live_url:"",
-        w_github_url:""
+        w_desc:"Todo Appication appointment list management",
+        w_img:todo_dash,
+        w_live_url:"https://salman-has.github.io/todo/",
+        w_github_url:"https://github.com/salman-has/todo"
     },
      {
         w_no:2,

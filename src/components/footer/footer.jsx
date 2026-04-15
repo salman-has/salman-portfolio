@@ -1,47 +1,63 @@
 import React from "react";
-import './footer.css';
-import user from '../../assets/user.png';
-import mylogo from '../../assets/mylogo.gif';
-const Footer=()=>{
+import "./footer.css";
+import user from "../../assets/user.png";
+import mylogo from "../../assets/mylogo.gif";
 
-    return(
-        <div className="footer" id="footer">
-            <div className="footer-top">
-                <div className="footer-top-left">
-                    <img src={mylogo} alt="" height={80} width={80}></img>
-                    <p>
-                        <b>Salman Hashmi</b><br/>
-                        Full Stack Web Developer<br/>
-                        <span><u>Turning ideas into digital reality</u></span><br/>
-                        <span style={{color:"#a81b45ff"}}>
-                            React , Node.js , MongoDB , JavaScript.<br/> 
-                            Code. Create. Innovate.
-                        </span>
-                       
-                        
-                    </p>
-                </div>
-                <div className="footer-top-right">
-                    <div className="footer-email-input">
-                        <img src={user} alt="" height={50} width={50}></img>
-                        <input type="email" placeholder="Enter your email"></input>
-                    </div>
-                    <div className="footer-subscribe">Subscribe</div>
-                </div>
-            </div>
-            <hr />
-            <div className="footer-bottom">
-                <div className="footer-bottom-left">
-                    <p>&copy; 2025 <b>Salman Hashmi. </b><span>All rights reserved</span></p>
+const Footer = () => {
+  return (
+    <div className="footer" id="footer">
 
-                </div>
-                <div className="footer-bottom-right">
-                    <p>Terms of services</p>
-                    <p>Privacy policy</p>
-                    <p>Contact with me</p>
-                </div>
-            </div>
+      {/* TOP */}
+      <div className="footer-top">
+
+        {/* LEFT */}
+        <div className="footer-left">
+          <img src={mylogo} alt="logo" className="footer-logo" />
+
+          <div className="footer-text">
+            <h3>Salman Hashmi</h3>
+            <p>Full Stack Web Developer</p>
+            <p className="tagline">Turning ideas into digital reality</p>
+            <p className="skills">
+              React, Node.js, MongoDB, JavaScript
+            </p>
+          </div>
         </div>
-    )
-}
+
+        {/* RIGHT */}
+        <div className="footer-right">
+
+          <div className="footer-input">
+            <img src={user} alt="user" />
+            <input type="email" placeholder="Enter your email" />
+          </div>
+
+          <button className="footer-btn">Subscribe</button>
+
+        </div>
+      </div>
+
+      <hr />
+
+      {/* BOTTOM */}
+      <div className="footer-bottom">
+
+        <div className="footer-bottom-left">
+          <p>
+            © 2025 <b>Salman Hashmi</b>. All rights reserved
+          </p>
+        </div>
+
+        <div className="footer-bottom-right">
+          <span>Terms</span>
+          <span>Privacy</span>
+          <span>Contact</span>
+        </div>
+
+      </div>
+
+    </div>
+  );
+};
+
 export default Footer;

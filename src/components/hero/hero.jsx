@@ -1,7 +1,8 @@
-7import React from "react";
+import React from "react";
 import mypic from '../../assets/mypic.jpg';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import './hero.css';
+
 const Hero=()=>{
     return(
         <div className='hero' id="home">
@@ -14,7 +15,7 @@ const Hero=()=>{
              
              <div className="hero-action">
                 <div className="hero-connect"><AnchorLink className="anchor-link"  href="#contact">Connect With me</AnchorLink></div>
-                <div className="hero-resume"><a  href="#" target="_blank" rel="noopener noreferrer">My Resume</a></div>
+                <div className="hero-resume"><a  href="#" target="_blank" rel="noopener noreferrer" onClick={()=>alert(`I have removed this features .because ,I'M upgrading currently !`)}>My Resume</a></div>
             
 
              </div>
