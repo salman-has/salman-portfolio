@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import mylogo from '../../assets/mylogo.gif';
+import mylogo from '../../assets/mylogo.GIF';
 import './navbar.css';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu_open from '../../assets/menu_open.png';
