@@ -14,7 +14,7 @@ const mywork_data = [
   {
     w_no: 2,
     w_desc: "Invenoty System (fullstack)",
-    w_img: inventory_system,
+    w_img: inventory_report,
     w_live_url: "https://github.com/salman-has/inventory-project.git",
     w_github_url: "https://github.com/salman-has/inventory-project.git",
   },
