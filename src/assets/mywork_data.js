@@ -2,7 +2,7 @@ import capture_netflix from "./Capture-netflix-template.png";
 import capture_nit_card from "./Capture-nit-card-tamplate.png";
 import shopper_temp from "./shopper-screenshot.png";
 import counter_app from "./counter_app.png";
-import inventory_report from '"./inventory_report.png';
+import inventory_report from "./inventory_report.png";
 const mywork_data = [
   {
     w_no: 1,
