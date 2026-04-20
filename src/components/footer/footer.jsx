@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 import user from "../../assets/user.png";
-import mylogo from "../../assets/mylogo.gif";
+import mylogo from "../../assets/mylogo.GIF";
 
 const Footer = () => {
   return (
