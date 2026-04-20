@@ -3,6 +3,7 @@ import capture_nit_card from "./Capture-nit-card-tamplate.PNG";
 import shopper_temp from "./shopper-screenshot.PNG";
 import counter_app from "./counter_app.PNG";
 import inventory_report from "./inventory_report.png";
+import todo_dash from "./todo_dash.png";
 const mywork_data = [
   {
     w_no: 1,
